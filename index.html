@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amberley Rae Johnson</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Design Portfolio by Amberley Rae Johnson">
+    <meta name="keywords" content="Art,Design,Photography,Videography,Illustrations,Architecture">
+    <meta name="author" content="Amberley Johnson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="johnson.css">
+</head>
+  <div id=announcement>CHECK OUT THE SPECIAL GIVEAWAY. CLICK ON THE 'CONTACT' PAGE!</div>
+    <body>
+    <header>
+        <img src="logo-01.png" height="60px" width="60px" alt="Logo of artist's first and middle initials: AR">
+       <h1>Amberley Rae Johnson</h1>
+       <p>a showcase of art and design</p>
+    </header>
+     <nav>
+       <div class="dropdown">
+      <button class="dropbtn">Navigation</button>
+      <div class="dropdown-content">
+          <ul>
+          <li><a href="index.html">Home</a></li> 
+          <li><a href="arch.html">Architecture</a></li>  
+          <li><a href="illustrations.html">Illustrations</a></li>  
+          <li><a href="videography.html">Videography</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+           <li><a href="shop.html">Shop</a></li>
+          </ul> 
+      </div>
+      </div>
+    </nav>
+    <main>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="turtleneck-girl.png" style="width:100%">
+    <div class="text">girl in turtleneck / illustrations</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="sunlakes.png" style="width:100%">
+    <div class="text">future desert city / architecture</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="poolofroses.png" style="width:100%">
+    <div class="text">pool of roses / photography</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<h2>Artist Statement</h2>
+<p>
+    What I choose to create starts with a story. It's all about a narrative and even more about a feeling than anything else. 
+    I am fascinated by people, nature, memory, and the perception of space. 
+    Softness and simplicity are what I try to exude in order to create relief amongst chaos— 
+    something I can only hope people respond to.
+</p><br>
+    </main>
+    <footer>
+           Copyright © 2018 Amberley Rae Johnson<br><br>
+           Find me on Social Media! <br/> 
+           <a href="https://www.instagram.com/a.raej">Instgram</a><br>
+           <a href="https://www.linkedin.com/in/amberley-johnson">LinkedIn</a><br>
+          <a href="https://www.youtube.com/channel/UCAEWVV83-n70gPJtdw748eg">Youtube</a>
+        </footer>
+  <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body> 
+</html>
